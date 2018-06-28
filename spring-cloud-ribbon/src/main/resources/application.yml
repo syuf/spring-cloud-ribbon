@@ -1,10 +1,10 @@
 server:
-  port: 8764
+  port: 3004
   
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:3000/eureka/
 spring:
   application:
     name: service-ribbon
