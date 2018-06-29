@@ -9,10 +9,18 @@ spring:
   application:
     name: service-ribbon
   rabbitmq:
-    host: localhost
+    host: 172.16.97.114
     port: 5672
     username: admin
-    password: admin 
+    password: admin
+  cloud:
+    bus:
+      trace:
+        enabled: true
+    config:
+      label: master
+      profile: dev
+      uri: config-server 
   sleuth:
     web:
       client:
