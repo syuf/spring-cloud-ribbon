@@ -1,20 +1,5 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://127.0.0.1:3000/eureka/
 spring:
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        serviceId: config-server
-      label: master
-      profile: dev
-    bus:
-      trace:
-        enabled: true 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
+  application:
+    name: service-ribbon
+  profiles:
+    active: dev

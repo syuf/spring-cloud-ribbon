@@ -1,9 +1,0 @@
-server:
-  port: 3003
-spring:
-  application:
-    name: service-ribbon
-  profiles:
-    active: dev
-
- 
