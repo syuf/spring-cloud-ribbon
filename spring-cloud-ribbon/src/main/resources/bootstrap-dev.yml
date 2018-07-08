@@ -3,7 +3,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:3000/eureka/
+      defaultZone: http://localhost:4001/eureka/,http://localhost:4003/eureka/,http://localhost:4003/eureka/
 spring:
   cloud:
     config:
@@ -15,8 +15,3 @@ spring:
     bus:
       trace:
         enabled: true 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
